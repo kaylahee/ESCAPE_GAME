@@ -8,7 +8,11 @@ public class Click : MonoBehaviour
     [SerializeField]
     private GameObject destroy_obj;
 
-    public Answer a;
+    [SerializeField]
+    private GameObject obj;
+
+    ArrayList arraylist = new ArrayList();
+
     RaycastHit hit;
     private void Update()
     {
@@ -23,12 +27,58 @@ public class Click : MonoBehaviour
                 {
                     hit.transform.gameObject.GetComponent<MeshRenderer>().material.color = Color.clear;
                     Destroy(destroy_obj);
-                }
-                if (gameObject.tag == "1" && gameObject.tag == "5" && gameObject.tag == "6" && gameObject.tag == "7")
-                {
-                    Destroy(destroy_obj);
+                    /*arraylist.Add(gameObject);*/
+
+                    /*if (arraylist[0] == "N_8")
+                    {
+                        if (arraylist[1] =="N_6")
+                        {
+                            if(arraylist[2] == "N_4")
+                            {
+                                Destroy(destroy_obj);
+                            }
+                            *//*else
+                            {
+                                obj.GetComponent<MeshRenderer>().material.color = Color.yellow;
+                            }*//*
+                        }
+                        *//*else
+                        {
+                            obj.GetComponent<MeshRenderer>().material.color = Color.yellow;
+                        }*//*
+                    }
+                    else
+                    {
+                        obj.GetComponent<MeshRenderer>().material.color = Color.yellow;
+                    }*/
                 }
             }
         }
     }
+
+    /*private void FindAnswer()
+    {
+        if (gameObject.tag == "N_8")
+        {
+            if (gameObject.tag == "N_6")
+            {
+                if (gameObject.tag == "N_4")
+                {
+                    Destroy(destroy_obj);
+                }
+                else
+                {
+                    obj.GetComponent<MeshRenderer>().material.color = Color.yellow;
+                }
+            }
+            else
+            {
+                obj.GetComponent<MeshRenderer>().material.color = Color.yellow;
+            }
+        }
+        else
+        {
+            obj.GetComponent<MeshRenderer>().material.color = Color.yellow;
+        }
+    }*/
 }

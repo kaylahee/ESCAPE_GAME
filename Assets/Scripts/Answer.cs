@@ -17,9 +17,6 @@ public class Answer : MonoBehaviour
 
     public void Click_Answer()
     {
-        if (gameObject.tag == "1" && gameObject.tag == "5" && gameObject.tag == "6" && gameObject.tag == "7")
-        {
-            Destroy(destroy_obj);
-        }
+        
     }
 }

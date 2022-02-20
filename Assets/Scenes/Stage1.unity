@@ -652,7 +652,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 888469274af241844af6400d221dbc40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroy_object: {fileID: 0}
+  destroy_obj: {fileID: 0}
+  a: {fileID: 0}
 --- !u!65 &805699663
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -908,7 +909,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 888469274af241844af6400d221dbc40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroy_object: {fileID: 0}
+  destroy_obj: {fileID: 0}
+  a: {fileID: 0}
 --- !u!65 &1089143034
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1017,7 +1019,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 888469274af241844af6400d221dbc40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroy_object: {fileID: 0}
+  destroy_obj: {fileID: 0}
+  a: {fileID: 0}
 --- !u!65 &1151473813
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1224,9 +1227,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkSpeed: 20
-  lookSensitivity: 1
+  lookSensitivity: 3
   cameraRotationLimit: 45
   theCamera: {fileID: 1440191396}
+  bA: {fileID: 0}
 --- !u!54 &1288297562
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1351,7 +1355,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 888469274af241844af6400d221dbc40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroy_object: {fileID: 1291648310}
+  destroy_obj: {fileID: 0}
+  a: {fileID: 0}
 --- !u!1 &1291966694
 GameObject:
   m_ObjectHideFlags: 0
@@ -2250,7 +2255,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 888469274af241844af6400d221dbc40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroy_object: {fileID: 0}
+  destroy_obj: {fileID: 0}
+  a: {fileID: 0}
 --- !u!1 &2084549060
 GameObject:
   m_ObjectHideFlags: 0
