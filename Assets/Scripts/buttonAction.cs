@@ -1,19 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class buttonAction : MonoBehaviour
 {
     [SerializeField]
     public GameObject Panel;
-    // 카메라 비추는거 다르게
-    /*[SerializeField]
-    public Camera cam;*/
-
-    /*public void buttonMethod()
-    {
-        Debug.Log("Okay");
-    }*/
 
     public void Panel_Open()
     {
@@ -21,11 +14,7 @@ public class buttonAction : MonoBehaviour
         if (Panel != null)
         {
             isActive = Panel.activeSelf;
-            Panel.SetActive(!isActive);
-            /*if (Panel.tag == "Canvas_Q4")
-            {
-                cam.depth = 2;
-            }*/
+            Panel.SetActive(true);
         }
     }
 }

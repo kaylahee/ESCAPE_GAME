@@ -57,13 +57,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Click.cs" />
-    <Compile Include="Assets\Scripts\OpenPanel.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\MakeitButton.cs" />
-    <Compile Include="Assets\Scripts\buttonAction.cs" />
-    <Compile Include="Assets\Scripts\Answer.cs" />
-    <Compile Include="Assets\Scripts\SolveP.cs" />
     <Compile Include="Assets\Scripts\ChangeScene.cs" />
+    <Compile Include="Assets\Scripts\buttonAction.cs" />
+    <Compile Include="Assets\Scripts\TimerSystem.cs" />
+    <Compile Include="Assets\Scripts\PasswordCheck.cs" />
+    <Compile Include="Assets\Scripts\NumIdentifier.cs" />
+    <Compile Include="Assets\Scripts\ClickOutside.cs" />
+    <Compile Include="Assets\Scripts\PassButton.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

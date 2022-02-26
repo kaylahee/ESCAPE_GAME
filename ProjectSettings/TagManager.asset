@@ -12,22 +12,22 @@ TagManager:
   - Water
   - UI
   - House
-  - Bed
-  - Desk
-  - Books
-  - Others
+  - Things
+  - Sumit_Space
+  - exit_end
   - Player
-  - Submit_Space
+  - buttons
+  - Qs
+  - CountDown
+  - School
+  - School_T_Room
+  - 
   - Door
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - END_Button
+  - CountDown
+  - Button
+  - Canvas_s
   - 
   - 
   - 
