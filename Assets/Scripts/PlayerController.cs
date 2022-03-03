@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -21,13 +22,16 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private Camera theCamera;
     private Rigidbody myRigid;
+ 
+    private AudioClip audioWalking;
+    AudioSource audioSource;
 
     bool isBorder;
-   
+ 
     // Start is called before the first frame update
     void Start()
     {
-        myRigid = GetComponent<Rigidbody>();        
+        myRigid = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -36,7 +40,11 @@ public class PlayerController : MonoBehaviour
         Move();
         CharacterRotation();
         CameraRotation();
-        /*ChangeCam();*/
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("Setting");
+        }
     }
 
     // 움직임
@@ -58,9 +66,9 @@ public class PlayerController : MonoBehaviour
         // 이것이 없으면 플레이어는 순간이동하게 될 것
         myRigid.MovePosition(transform.position + _velocity * Time.deltaTime);
 
-        if(isBorder)
+        if (isBorder)
         {
-            transform.position += new Vector3(_moveDirX, 0, _moveDirZ) * walkSpeed;
+            transform.position += new Vector3(_moveDirX, 0, _moveDirZ).normalized * walkSpeed;
         }
     }
 
@@ -83,18 +91,4 @@ public class PlayerController : MonoBehaviour
 
         theCamera.transform.localEulerAngles = new Vector3(currentCameraRotationX, 0f, 0f);
     }
-
-    // 벽 통과 X
-    private void StopToWall()
-    {
-        isBorder = Physics.Raycast(transform.position, transform.forward, 2, LayerMask.GetMask("House"));
-    }
-
-    /*public void ChangeCam()
-    {
-        if (bA.cam.depth > theCamera.depth)
-        {
-            theCamera.depth = 3;
-        }
-    }*/
 }

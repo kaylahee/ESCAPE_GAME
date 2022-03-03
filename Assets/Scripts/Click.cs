@@ -20,6 +20,7 @@ public class Click : MonoBehaviour
             {
                 if (hit.transform.gameObject == gameObject)
                 {
+                    GetComponent<AudioSource>().Play();
                     Destroy(destroy_obj);
                 }
             }
